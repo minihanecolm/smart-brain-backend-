@@ -22,4 +22,6 @@ const signin =(db, bcrypt)=> (req, res)=>{
 
 };
 
+export default signin
+
 
