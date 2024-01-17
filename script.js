@@ -3,7 +3,7 @@ import bcrypt from 'bcrypt-nodejs';
 import cors from 'cors';
 import knex from 'knex'
 import register from './controllers/register.js';
-import signin from './controllers/signin.js';
+import signin from './controllers/signIn.js';
 import profile from './controllers/profile.js'
 import image from './controllers/image.js';
 import imageurl from './controllers/imageurl.js'
@@ -35,7 +35,8 @@ app.get('/',(req,res)=>{
 	res.send('success')
 })
 
-app.post('/signin',signIn(db, bcrypt));
+app.post('/signin',(req, res)=>{
+  signIn(req, res, db, bcrypt)});
 
 
 app.post('/register', (req, res) => {
