@@ -22,6 +22,6 @@ const signIn =(db, bcrypt, eq, res)=>{
 
 };
 
-export default signIn
+export default signIn;
 
 

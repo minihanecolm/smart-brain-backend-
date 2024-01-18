@@ -4,7 +4,7 @@ import cors from 'cors';
 import knex from 'knex'
 import register from './controllers/register.js';
 import signIn from './controllers/signIn.js';
-import profile from './controllers/profile.js'
+import profile from './controllers/profile.js';
 import image from './controllers/image.js';
 import imageurl from './controllers/imageurl.js'
 

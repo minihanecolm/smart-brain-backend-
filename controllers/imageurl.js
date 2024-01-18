@@ -85,4 +85,4 @@ Promise.all(boundingBoxes).then(data => {
 // }
 
 
-export default imageurl
+export default imageurl;
