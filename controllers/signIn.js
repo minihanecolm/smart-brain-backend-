@@ -1,4 +1,4 @@
-const signin =(db, bcrypt, eq, res)=>{
+const signIn =(db, bcrypt, eq, res)=>{
 	const {email, password}= req.body;
 	if (!email || !password){
 		return res.status(400).json('incorrect submission')
@@ -22,6 +22,6 @@ const signin =(db, bcrypt, eq, res)=>{
 
 };
 
-export default signin
+export default signIn
 
 
