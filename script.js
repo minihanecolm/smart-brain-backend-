@@ -13,13 +13,15 @@ import imageurl from './controllers/imageurl.js'
 const db= knex({
         client: 'pg',
         connection: {
-          host : '127.0.0.1', //localhost
-          user : 'colmminihane', //add your user name for the database here
+          connectionString : process.env.DATABASE_URL,
+          ssl: {rejectUnauthorized: false},
+          host : process.env.DATABASE_HOST,
           port: 5432, // add your port number here
-          password : '', //add your correct password in here
-          database : 'smart-brain' //add your database name you created here
+          user : process.env.DATABASE_USER
+          password : process.env.DATABASE_PW
+          database : process.env.DATABASE_DB
         },
-         searchPath: ['smartbrain']
+        
 });
 
 
