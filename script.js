@@ -38,7 +38,7 @@ app.get('/',(req,res)=>{
 })
 
 app.post('/signin',(req, res)=>{
-  signIn(req, res, db, bcrypt)});
+  signin(req, res, db, bcrypt)});
 
 
 app.post('/register', (req, res) => {
